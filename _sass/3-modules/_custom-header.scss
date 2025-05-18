@@ -26,11 +26,12 @@
 
 /* Estilos aprimorados para o logo */
 .logo__image {
-  max-height: 400px !important; /* Importante para sobrescrever outros estilos */
+  max-height: 300px !important; /* Importante para sobrescrever outros estilos */
   width: auto !important; /* Mantém a proporção da imagem */
   max-width: 80%; /* Impede que o logo fique maior que o container em telas pequenas */
   height: auto !important; /* Garante que a altura seja proporcional */
   object-fit: contain; /* Garante que a imagem seja exibida completamente */
+  margin-bottom: 30px
 }
 
 .logo__link {
