@@ -10,13 +10,7 @@
   text-align: center;
   &:after,
   &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    height: 1px;
-    background: $light-gray;
+   display: none;
   }
 
   &:after {
