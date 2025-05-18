@@ -26,7 +26,7 @@
 
 /* Estilos aprimorados para o logo */
 .logo__image {
-  max-height: 200px !important; /* Importante para sobrescrever outros estilos */
+  max-height: 400px !important; /* Importante para sobrescrever outros estilos */
   width: auto !important; /* Mantém a proporção da imagem */
   max-width: 80%; /* Impede que o logo fique maior que o container em telas pequenas */
   height: auto !important; /* Garante que a altura seja proporcional */
@@ -45,7 +45,6 @@
   left: auto;
   width: 100%;
   text-align: center;
-  margin-top: 20px; /* Espaço adicional após o logo maior */
 }
 
 .nav__list {
@@ -66,7 +65,7 @@
 
 /* Ajustes para o conteúdo principal */
 .content {
-  padding-top: 30px; /* Espaço adicional no topo do conteúdo principal */
+  padding-top: 10px; /* Espaço adicional no topo do conteúdo principal */
   clear: both; /* Garante que o conteúdo comece abaixo do cabeçalho */
 }
 
