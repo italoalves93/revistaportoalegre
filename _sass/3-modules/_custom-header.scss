@@ -12,6 +12,7 @@
   padding-top: 30px;
   padding-bottom: 15px;
   position: relative;
+  min-height: 200px;
 }
 
 .centered-logo {
@@ -19,13 +20,15 @@
   transform: none;
   top: auto;
   left: auto;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   text-align: center;
   width: 100%;
 }
 
 .logo__image {
-  max-height: 800px; /* Aumenta o tamanho do logo */
+  max-height: 200px !important; /* Aumenta o tamanho do logo */
+  width: auto !important;
+  max-width: 80% !important;
 }
 
 .centered-nav {
