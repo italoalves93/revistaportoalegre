@@ -28,4 +28,23 @@
   .page-title-box { margin-top: 40px; }
   main.content { padding-top: 40px; }
 </style>
+  <style>
+  /* Remove horizontal bars */
+  .header::before, .header::after,
+  .lates-title::before, .lates-title::after {
+    display: none !important;
+  }
+  
+  /* Clean up header styling */
+  .header {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Fix for "Latest Posts" title */
+  .lates-title {
+    border: none !important;
+    background: none !important;
+  }
+</style>
 </head>
