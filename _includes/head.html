@@ -49,4 +49,33 @@
     border-color: transparent !important;
   }
 </style>
+<style>
+  /* Espaçamento maior entre o cabeçalho e a lista de artigos */
+  .header {
+    margin-bottom: 60px !important;
+  }
+  
+  /* Espaçamento superior para o primeiro artigo */
+  .article:first-child {
+    margin-top: 60px !important;
+  }
+  
+  /* Espaçamento entre artigos */
+  .article {
+    margin-bottom: 50px !important;
+  }
+  
+  /* Adicionar linha sutil de separação visual */
+  .header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #f0f0f0;
+    position: absolute;
+    bottom: -30px;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+  }
+</style>
 </head>
