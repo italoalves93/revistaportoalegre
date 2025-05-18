@@ -31,7 +31,6 @@
   max-width: 80%; /* Impede que o logo fique maior que o container em telas pequenas */
   height: auto !important; /* Garante que a altura seja proporcional */
   object-fit: contain; /* Garante que a imagem seja exibida completamente */
-  margin-bottom: 30px
 }
 
 .logo__link {
@@ -46,6 +45,7 @@
   left: auto;
   width: 100%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .nav__list {
