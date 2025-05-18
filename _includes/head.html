@@ -28,23 +28,25 @@
   .page-title-box { margin-top: 40px; }
   main.content { padding-top: 40px; }
 </style>
-  <style>
-  /* Remove horizontal bars */
+<style>
+  /* Remove ALL horizontal lines/borders in the header area */
+  .header, .main-nav, .centered-nav, .nav__list, .main-nav__box, .nav__title, 
+  .nav__item, .header-wrapper, .container, .row, nav, 
   .header::before, .header::after,
-  .lates-title::before, .lates-title::after {
-    display: none !important;
-  }
-  
-  /* Clean up header styling */
-  .header {
+  .main-nav::before, .main-nav::after,
+  .nav__list::before, .nav__list::after,
+  .nav__title::before, .nav__title::after,
+  body::before, body::after {
+    border: none !important;
+    border-top: none !important;
     border-bottom: none !important;
     box-shadow: none !important;
+    background-image: none !important;
   }
   
-  /* Fix for "Latest Posts" title */
-  .lates-title {
-    border: none !important;
-    background: none !important;
+  /* Force transparency on any remaining borders */
+  * {
+    border-color: transparent !important;
   }
 </style>
 </head>
