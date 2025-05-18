@@ -3,8 +3,7 @@
     <div class="col col-12">
       <!-- início do cabeçalho -->
       <header class="header">
-
-        <div class="logo centered-logo">
+        <div class="logo">
           <a class="logo__link" href="{{site.baseurl}}/">
           {%if site.data.settings.logo %}
             <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
@@ -14,8 +13,7 @@
           </a>
         </div>
 
-        <nav class="main-nav centered-nav">
-
+        <nav class="main-nav">
           <div class="main-nav__box">
             <div class="nav-icon__close">
               <i class="ion ion-ios-close-circle-outline"></i>
@@ -37,7 +35,6 @@
                 {% endunless %}
               {% endfor %}
             </ul>
-
           </div>
         </nav>
 
