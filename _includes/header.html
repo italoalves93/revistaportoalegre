@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col col-12">
-      <!-- begin header -->
+      <!-- início do cabeçalho -->
       <header class="header">
 
-        <div class="logo">
+        <div class="logo centered-logo">
           <a class="logo__link" href="{{site.baseurl}}/">
           {%if site.data.settings.logo %}
             <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
@@ -14,7 +14,7 @@
           </a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav centered-nav">
 
           <div class="main-nav__box">
             <div class="nav-icon__close">
@@ -25,7 +25,7 @@
 
             <ul class="nav__list list-reset">
               <li class="nav__item">
-                <a href="{{site.baseurl}}/" class="nav__link">Página Inicial</a>
+                <a href="{{site.baseurl}}/" class="nav__link">Início</a>
               </li>
               {% for page in site.pages %}
                 {% unless page.name == 'tags.html' or page.name == '404.html' %}
@@ -48,7 +48,7 @@
 
         <div class="header__overlay"></div>
       </header>
-      <!-- end header -->
+      <!-- fim do cabeçalho -->
     </div>
   </div>
 </div>
