@@ -1,0 +1,68 @@
+/* 
+ * Arquivo: _sass/3-modules/_custom-header.scss
+ * 
+ * Este arquivo contém os estilos personalizados para o novo layout do cabeçalho
+ * com o logo centralizado e menu abaixo.
+ */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.centered-logo {
+  position: relative;
+  transform: none;
+  top: auto;
+  left: auto;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.logo__image {
+  max-height: 80px; /* Aumenta o tamanho do logo */
+}
+
+.centered-nav {
+  position: relative;
+  transform: none;
+  top: auto;
+  left: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  .logo__image {
+    max-height: 60px;
+  }
+  
+  .nav__list {
+    flex-direction: column;
+  }
+  
+  .main-nav {
+    &.is-open {
+      .nav__list {
+        flex-direction: column;
+      }
+    }
+  }
+}
