@@ -9,20 +9,6 @@ blurb: "Quanto da realidade social uma dada relação imaginária consegue figur
 categories: [Artigo, Tradução]
 ---
 
-# {{ page.title }}
-
-<div class="post-meta">
-  <span class="post-date">{{ page.date | date: "%-d de %B de %Y" }}</span> • 
-  <span class="post-author">{{ page.author }}</span>
-</div>
-
-<div class="post-blurb">
-  {{ page.blurb }}
-</div>
-
-![Ilustração mostrando livros e ícones de redes sociais]({{ site.baseurl }}/images/literatura-redes-sociais.jpg)
-*Crédito: Ilustração de Gabriel Santos*
-
 Quanto ao socialismo, precisamos focar nos dilemas mais perturbadores, e ainda sem solução, que envolvem a noção de comunidade ou coletivo. Alguns desses dilemas são bem conhecidos, como a contradição entre autogestão no nível local e planejamento na escala global; ou os problemas trazidos pela abolição do mercado, para não falar da abolição da própria forma-mercadoria. No entanto, tenho considerado mais problemáticas e estimulantes as seguintes proposições sobre a própria natureza da sociedade: tem sido afirmado que, com uma exceção conhecida (o próprio capitalismo, que é organizado dentro de um mecanismo econômico), nunca existiu uma forma coesa de sociedade humana que não fosse baseada em alguma forma de transcendência ou religião. Sem força bruta, que nunca é mais do que uma solução momentânea, não podemos esperar que as pessoas vivam em cooperação e renunciem aos desejos omnívoros do Id sem recorrer a crenças religiosas ou valores transcendentes, o que é absolutamente incompatível com qualquer sociedade socialista concebível. A consequência é que essas sociedades só alcançam uma coerência momentânea em circunstâncias de sítio, no entusiasmo dos tempos de guerra e no esforço coletivo provocado por grandes restrições. Em outras palavras, sem o mecanismo econômico não transcendente do capital todos os apelos a incentivos morais (no caso de Che) ou à primazia do político (no caso do maoísmo) fatalmente se exaurem em curto espaço de tempo, sobrando apenas as alternativas gêmeas de um retorno ao capitalismo ou da construção de alguma variante moderna de despotismo oriental. Vocês estão convidados, é claro, a acreditar nesse prognóstico, contanto que entendam que, nesse caso, qualquer política socialista é estritamente uma miragem e uma perda do seu tempo – que seria melhor gastarem seu tempo ajustando e reformando a eterna e vasta paisagem capitalista.
 
 ## A tarefa mais urgente do marxismo
