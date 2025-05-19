@@ -23,7 +23,7 @@ instagram: https://instagram.com/revportoalegre # Add your Instagram handle
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: false # add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
