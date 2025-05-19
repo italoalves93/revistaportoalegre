@@ -3,16 +3,17 @@ layout: post
 title: "Mapeamento cognitivo"
 date: 2023-05-18 12:00:00 +0300
 image: literatura-redes-sociais.jpg
-author: 
-  name: "Fredric Jameson"
-  bio: "Fredric Jameson é crítico literário e teórico marxista."
+author: "Fredric Jameson"
+author_bio: "Fredric Jameson é crítico literário e teórico marxista."
 blurb: "Quanto da realidade social uma dada relação imaginária consegue figurar? Por meio de uma análise das relações entre figuração e as transformações do capitalismo, Frederic Jameson se vale da pergunta para introduzir o conceito de mapeamento cognitivo."
 categories: [Artigo, Tradução]
 ---
 
+# {{ page.title }}
+
 <div class="post-meta">
   <span class="post-date">{{ page.date | date: "%-d de %B de %Y" }}</span> • 
-  <span class="post-author"><a href="{{ site.baseurl }}/autor/{{ page.author.name | slugify }}">{{ page.author.name }}</a></span>
+  <span class="post-author">{{ page.author }}</span>
 </div>
 
 <div class="post-blurb">
@@ -23,18 +24,29 @@ categories: [Artigo, Tradução]
 *Crédito: Ilustração de Gabriel Santos*
 
 Quanto ao socialismo, precisamos focar nos dilemas mais perturbadores, e ainda sem solução, que envolvem a noção de comunidade ou coletivo. Alguns desses dilemas são bem conhecidos, como a contradição entre autogestão no nível local e planejamento na escala global; ou os problemas trazidos pela abolição do mercado, para não falar da abolição da própria forma-mercadoria. No entanto, tenho considerado mais problemáticas e estimulantes as seguintes proposições sobre a própria natureza da sociedade: tem sido afirmado que, com uma exceção conhecida (o próprio capitalismo, que é organizado dentro de um mecanismo econômico), nunca existiu uma forma coesa de sociedade humana que não fosse baseada em alguma forma de transcendência ou religião. Sem força bruta, que nunca é mais do que uma solução momentânea, não podemos esperar que as pessoas vivam em cooperação e renunciem aos desejos omnívoros do Id sem recorrer a crenças religiosas ou valores transcendentes, o que é absolutamente incompatível com qualquer sociedade socialista concebível. A consequência é que essas sociedades só alcançam uma coerência momentânea em circunstâncias de sítio, no entusiasmo dos tempos de guerra e no esforço coletivo provocado por grandes restrições. Em outras palavras, sem o mecanismo econômico não transcendente do capital todos os apelos a incentivos morais (no caso de Che) ou à primazia do político (no caso do maoísmo) fatalmente se exaurem em curto espaço de tempo, sobrando apenas as alternativas gêmeas de um retorno ao capitalismo ou da construção de alguma variante moderna de despotismo oriental. Vocês estão convidados, é claro, a acreditar nesse prognóstico, contanto que entendam que, nesse caso, qualquer política socialista é estritamente uma miragem e uma perda do seu tempo – que seria melhor gastarem seu tempo ajustando e reformando a eterna e vasta paisagem capitalista.
+
+## A tarefa mais urgente do marxismo
+
 Na verdade esse dilema é, para mim, a tarefa mais urgente com que o marxismo hoje se confronta. Eu disse anteriormente que a suposta crise no marxismo não é tanto uma crise na ciência marxista, que nunca foi tão rica, quanto na ideologia marxista. Se a ideologia é – para dar uma definição um pouco diferente – uma visão do futuro que captura as massas, é preciso admitir que, com exceção de alguns experimentos coletivos atuais, como aqueles em Cuba e na Iugoslávia, nenhum partido marxista, socialista ou movimento social tem qualquer ideia de como deveria ser ou com o que deveria parecer o sistema social do socialismo ou do comunismo. Essa visão não será puramente econômica, ainda que os economistas marxistas sejam tão deficientes quanto o resto de nós em abordar esse problema utópico com seriedade. Essa visão é também essencialmente social e cultural, e envolve a tarefa de tentar imaginar como uma sociedade sem hierarquia, uma sociedade de pessoas livres, uma sociedade que repudiou completamente os mecanismos econômicos do mercado, poderia ser coerente. Historicamente, todas as formas de hierarquia foram baseadas, em última instância, numa hierarquia de gênero e no bloco fundamental da unidade familiar, o que esclarece que essa é o verdadeiro ponto de ligação entre as problemáticas feminista e marxista – não uma ligação antagônica, mas o momento em que o projeto feminista e o projeto marxista e socialista se encontram e confrontam o mesmo dilema: como imaginar uma Utopia.
-Se a ideologia é – para dar uma definição um pouco diferente – uma visão do futuro que captura as massas, é preciso admitir que, com exceção de alguns experimentos coletivos atuais, como aqueles em Cuba e na Iugoslávia, nenhum partido marxista, socialista ou movimento social tem qualquer ideia de como deveria ser ou com o que deveria parecer o sistema social do socialismo ou do comunismo.
-Retornando ao começo dessa longa divagação, é pouco provável que qualquer um que repudie o conceito de totalidade possa ter algo de útil a nos dizer sobre essas questões, já que, para tais pessoas, está claro que a visão totalizante do socialismo não faz sentido e é um falso problema dentro do mundo aleatório e indecidível dos microgrupos. Mas talvez exista outra possibilidade, a saber, que nossa insatisfação com o conceito de totalidade não seja tanto um pensamento quanto um sintoma significativo, um aspecto das crescentes dificuldades em pensar o conjunto de inter-relações numa sociedade complicada. Essa parece ser, pelo menos, a implicação do comentário do arquiteto do Team X Aldo van Eyck quando, em 1966, lançou sua versão da tese da morte do modernismo: “nós não sabemos nada sobre a vasta multiplicidade – nós não podemos dar conta dela – nem como arquitetos, nem como planejadores, nem de outra maneira”. Ao que acrescentou, e a continuação pode ser facilmente extrapolada da arquitetura para a mudança social: “mas se a sociedade não tem forma – como os arquitetos podem construir sua contra-forma?”3
+
+> Se a ideologia é – para dar uma definição um pouco diferente – uma visão do futuro que captura as massas, é preciso admitir que, com exceção de alguns experimentos coletivos atuais, como aqueles em Cuba e na Iugoslávia, nenhum partido marxista, socialista ou movimento social tem qualquer ideia de como deveria ser ou com o que deveria parecer o sistema social do socialismo ou do comunismo.
+
+### O problema da totalidade
+
+Retornando ao começo dessa longa divagação, é pouco provável que qualquer um que repudie o conceito de totalidade possa ter algo de útil a nos dizer sobre essas questões, já que, para tais pessoas, está claro que a visão totalizante do socialismo não faz sentido e é um falso problema dentro do mundo aleatório e indecidível dos microgrupos. Mas talvez exista outra possibilidade, a saber, que nossa insatisfação com o conceito de totalidade não seja tanto um pensamento quanto um sintoma significativo, um aspecto das crescentes dificuldades em pensar o conjunto de inter-relações numa sociedade complicada. Essa parece ser, pelo menos, a implicação do comentário do arquiteto do Team X Aldo van Eyck quando, em 1966, lançou sua versão da tese da morte do modernismo: "nós não sabemos nada sobre a vasta multiplicidade – nós não podemos dar conta dela – nem como arquitetos, nem como planejadores, nem de outra maneira". Ao que acrescentou, e a continuação pode ser facilmente extrapolada da arquitetura para a mudança social: "mas se a sociedade não tem forma – como os arquitetos podem construir sua contra-forma?"[^1]
+
+## Mapeamento cognitivo e pós-modernismo
+
 Vocês ficarão aliviados ao saber que agora podemos retomar tanto a minha conclusão, quanto ao problema da representação estética e do mapeamento cognitivo, que foi o pretexto deste ensaio. O projeto do mapeamento cognitivo obviamente depende do conceito de alguma totalidade social global (irrepresentável, imaginária) que deve ser mapeada. Eu falei de forma e conteúdo, e essa distinção me permitirá pelo menos dizer algo sobre uma estética, que mencionei anteriormente, mas cuja forma sou incapaz de adivinhar ou imaginar. Mas que o pós-modernismo nos dá pistas e exemplos de tal mapeamento cognitivo no nível de seu conteúdo é, acredito, demonstrável.
-A conspiração, fico tentado a dizer, é o mapeamento cognitivo do pobre na era pós-moderna.
+
+> A conspiração, fico tentado a dizer, é o mapeamento cognitivo do pobre na era pós-moderna.
+
 Já falei, em outro lugar, sobre a guinada em direção a uma temática da reprodução mecânica, do modo como a autorreferência de muito da arte pós-moderna toma a forma de um jogo com a tecnologia reprodutiva – filmes, fitas, vídeo, computadores, e por aí vai – o que, para mim, é uma figura degradada do grande espaço multinacional que permanece por ser mapeado cognitivamente. Igualmente notável, em outro nível, é a onipresença do tema da paranóia que aparece na incansável produção de teorias da conspiração das mais elaboradas. A conspiração, fico tentado a dizer, é o mapeamento cognitivo do pobre na era pós-moderna; é a figura degradada da lógica total do capitalismo tardio, uma tentativa desesperada de representar esse sistema, cujo fracasso é sempre marcado pela escorregada numa mera questão de tema e conteúdo.
+
 A realização do mapeamento cognitivo será uma questão de forma, e eu espero ter mostrado como será uma parte integral da política socialista, ainda que sua possibilidade possa depender de alguma abertura política anterior, e, nesse caso, sua tarefa seria expandi-la culturalmente. Ainda, mesmo que não possamos imaginar as produções de uma tal estética, pode haver, mesmo assim, como com a própria ideia de utopia, algo de positivo na tentativa de manter viva a possibilidade de imaginar algo assim.
 
 ---
 
 ## Notas
 
-[^1]: SILVA, Carlos. "A crítica na era do like: transformações no campo literário brasileiro". Revista de Estudos Literários, v. 15, n. 2, p. 45-67, 2022.
-
-[^2]: SANTOS, Ana Maria. Literatura Expandida: formas narrativas nas redes sociais. São Paulo: Perspectiva, 2021, p. 78.
+[^1]: Frase atribuída a Aldo van Eyck em seu discurso no Team X em 1966.
