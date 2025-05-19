@@ -5,95 +5,94 @@ layout: default
   <div class="post-title-box">
     <div class="row">
       <div class="col col-10 push-2 col-11 push-t-1 col-m-12 push-m-0">
-        <span class="post__date">
-          <time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
-        </span>
-
         <h1 class="post-title">{{ page.title | escape }}</h1>
-
-        <div class="post__info">
-          <div class="post__author">
-            <span>By</span>
-            <a href="{{ site.baseurl }}/about/" class="author-name">{{site.data.settings.author.name}}</a>
-          </div>
-
-          {% if page.tags.size >= 1 %}
-          <div class="post__tags">
-            {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/tag/{{ tag | downcase | replace: " ", "-" }}" class="post__tags-tag">{{ tag }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
+        
+        <div class="post-meta">
+          <span class="post-date">{{ page.date | date: "%-d de %B de %Y" }}</span> • 
+          <span class="post-author">{{ page.author }}</span>
         </div>
+        
+        {% if page.blurb %}
+        <div class="post-blurb">
+          {{ page.blurb }}
+        </div>
+        {% endif %}
+        
+        {% if page.tags.size >= 1 %}
+        <div class="post-tags">
+          {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tag/{{ tag | downcase | replace: " ", "-" }}" class="post-tag">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
 
   {% assign no-image = nil %}
   {% if page.image %}
-    <div class="post__head">
+    <div class="post-header">
       <div class="post-image" style="background-image: url({{site.baseurl}}/images/{{page.image}})"></div>
     </div>
   {% else %}
     {% assign no-image = 'post-no-image' %}
   {% endif %}
 
-  </div>
-
-
-  <div class="container">
   <div class="row">
     <!-- begin post -->
     <article class="post {{ no-image }} col col-8 col-t-10 col-m-12">
-
-      <div class="post__content">
+      <div class="post-content">
         {{ content }}
       </div>
+      
+      {% if page.author_bio %}
+      <div class="post-author-box">
+        <div class="author-content">
+          <h4 class="author-name">{{ page.author }}</h4>
+          <p class="author-bio">{{ page.author_bio }}</p>
+        </div>
+      </div>
+      {% endif %}
 
-      <div class="post__share">
-        <span class="share__title">Compartilhe:</span>
-        <ul class="share__list list-reset">
-          <li class="share__item">
-            <a class="share__facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      <div class="post-share">
+        <span class="share-title">Compartilhe:</span>
+        <ul class="share-list list-reset">
+          <li class="share-item">
+            <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-              title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>
+              title="Compartilhar no Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>
           </li>
 
-          <li class="share__item">
-            <a class="share__twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+          <li class="share-item">
+            <a class="share-twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-              title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>
+              title="Compartilhar no Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>
           </li>
 
-          <li class="share__item">
-            <a class="share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title | uri_escape }}&summary={{ page.description | uri_escape }}&source={{ site.title | uri_escape }}"
-              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="ion ion-logo-linkedin"></i></a>
-          </li>
-
-          <li class="share__item">
-            <a class="share__pinterest" href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&amp;media={{ site.url }}{{ site.baseurl }}/images/{{ page.image }}&amp;description={{ page.title | uri_escape }}"
-              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
+          <li class="share-item">
+            <a class="share-pinterest" href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&amp;media={{ site.url }}{{ site.baseurl }}/images/{{ page.image }}&amp;description={{ page.title | uri_escape }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhar no Pinterest"
               rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>
           </li>
         </ul>
       </div>
     </article>
     <!-- end post -->
-    </div>
   </div>
+</div>
 
-  <div class="container">
-  <div class="post__navigation">
+<div class="container">
+  <div class="post-navigation">
     {% if page.previous.url %}
     <div class="prev">
-      <a class="post__nav__image" href="{{ site.baseurl }}{{page.previous.url}}" style="background-image: url({{site.baseurl}}/images/{{page.previous.image}})"></a>
-      <h2 class="post__nav__title">
+      <a class="post-nav-image" href="{{ site.baseurl }}{{page.previous.url}}" style="background-image: url({{site.baseurl}}/images/{{page.previous.image}})"></a>
+      <h2 class="post-nav-title">
         <i class="ion ion-md-arrow-back"></i>
         <a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a>
       </h2>
-      <p class="prev__excerpt">
-        {% if page.previous.description %}
-          {{ page.previous.description }}
+      <p class="prev-excerpt">
+        {% if page.previous.blurb %}
+          {{ page.previous.blurb | truncate: 110 }}
         {% else %}
           {{ page.previous.content | strip_html | truncate: 110 }}
         {% endif %}
@@ -103,15 +102,15 @@ layout: default
 
     {% if page.next.url %}
     <div class="next">
-      <a class="post__nav__image" href="{{ site.baseurl }}{{page.next.url}}" style="background-image: url({{site.baseurl}}/images/{{page.next.image}})">
+      <a class="post-nav-image" href="{{ site.baseurl }}{{page.next.url}}" style="background-image: url({{site.baseurl}}/images/{{page.next.image}})">
       </a>
-      <h2 class="post__nav__title">
+      <h2 class="post-nav-title">
         <a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a>
         <i class="ion ion-md-arrow-forward"></i>
       </h2>
-      <p class="next__excerpt">
-        {% if page.next.description %}
-          {{ page.next.description }}
+      <p class="next-excerpt">
+        {% if page.next.blurb %}
+          {{ page.next.blurb | truncate: 110 }}
         {% else %}
           {{ page.next.content | strip_html | truncate: 110 }}
         {% endif %}
@@ -121,4 +120,131 @@ layout: default
   </div>
 
   {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
-  </div>
+</div>
+
+<style>
+  .post-blurb {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #f6b141;
+    border-radius: 3px;
+  }
+  
+  .post-meta {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .post-author {
+    font-weight: 600;
+  }
+  
+  .post-author-box {
+    padding: 25px;
+    margin: 40px 0;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 3px solid #f6b141;
+  }
+  
+  .author-name {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .author-bio {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Estilos para citações */
+  blockquote {
+    border-left: 4px solid #f6b141;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 20px 20px 20px 30px;
+    border-radius: 3px;
+  }
+  
+  /* Estilos para notas de rodapé */
+  .footnotes {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footnotes ol {
+    padding-left: 20px;
+  }
+  
+  .footnotes li {
+    margin-bottom: 10px;
+  }
+  
+  .footnote-ref {
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    top: -3px;
+    margin-left: 2px;
+    padding: 3px 5px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .footnote-backref {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #f6b141;
+  }
+  
+  /* Estilos para cabeçalhos */
+  .post-content h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .post-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #444;
+  }
+  
+  /* Responsividade */
+  @media only screen and (max-width: 768px) {
+    blockquote {
+      font-size: 16px;
+      margin: 20px 0;
+      padding: 15px 15px 15px 20px;
+    }
+    
+    .post-blurb {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+    
+    .post-meta {
+      font-size: 14px;
+    }
+  }
+</style>
