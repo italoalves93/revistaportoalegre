@@ -5,13 +5,13 @@ permalink: /expediente/
 image: anuncie.jpg
 ---
 
-#Equipe editorial
+##Equipe editorial
 
-##Edição-executiva
+###Edição-executiva
 Eduardo Lara e Ítalo Alves
 
-#Ilustrações
+##Ilustrações
 Gabriela João (Portfólio)
 
-#Contato
+##Contato
 E-mail: revistaportoalegre@revistaportoalegre.com
