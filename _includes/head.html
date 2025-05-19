@@ -14,10 +14,79 @@
   <!-- Ionicons -->
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <style>
-  {% capture include_to_scssify %}
-    {% include main.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-  </style>
+<!-- Main styles -->
+<style>
+{% capture include_to_scssify %}
+  {% include main.scss %}
+{% endcapture %}
+{{ include_to_scssify | scssify }}
+</style>
+
+<!-- Simple fixes for header and spacing -->
+<style>
+  /* Centralized logo */
+  .logo {
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  
+  .logo__image {
+    max-height: 300px;
+    width: auto;
+  }
+  
+  /* Centered navigation */
+  .main-nav {
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav__item {
+    margin: 0 20px 10px;
+  }
+  
+  /* Fix spacing and borders */
+  .header {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border: none;
+  }
+  
+  .header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+  }
+  
+  /* Remove unwanted borders */
+  .header-wrapper, .header, .main-nav, .nav__list, 
+  .container, .row, nav, .page-title-box, 
+  .post-title-box {
+    border: none;
+  }
+  
+  /* Fix article spacing */
+  .article:first-child {
+    margin-top: 0;
+  }
+  
+  /* Mobile adjustments */
+  @media only screen and (max-width: 768px) {
+    .logo__image {
+      max-height: 150px;
+    }
+  }
+</style>
 </head>
