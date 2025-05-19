@@ -81,6 +81,15 @@ blockquote {
   }
 }
 
+// Add to your base.scss file
+.header-wrapper, 
+.header, 
+.main-nav, 
+.nav__list,
+.container {
+  border: none;
+}
+
 pre {
   overflow: auto;
   padding: 15px;
