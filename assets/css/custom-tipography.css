@@ -162,4 +162,57 @@ a, button, .button, input[type="submit"] {
   .post-blurb {
     font-size: 20px !important;
   }
+
+  /* Letter Spacing Adjustments */
+
+/* Adjust body text letter spacing */
+body, p, li, td, th, input, textarea, blockquote, cite, figcaption, time, address, 
+.article__excerpt, .prev-excerpt, .next-excerpt {
+  letter-spacing: -0.02em !important; /* Slightly reduce letter spacing for body text */
+}
+
+/* Adjust heading letter spacing */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.page-title,
+.article__title,
+.hero__title,
+.logo__link,
+.author-name,
+.article-title,
+.nav__link,
+.pagination,
+.share-title,
+.widget__title {
+}
+
+/* Adjust specific elements that might need different treatment */
+.post-meta,
+.article__meta {
+  letter-spacing: normal !important; /* Keep normal spacing for meta information */
+}
+
+blockquote {
+  letter-spacing: -0.025em !important; /* Slight reduction for blockquotes */
+}
+
+/* More specific adjustments for main content areas */
+.post-content p, 
+.post-content li,
+.page__content p,
+.page__content li {
+  letter-spacing: -0.02em !important; /* Consistent with body text */
+}
+
+.post-content h2,
+.page__content h2 {
+  letter-spacing: -0.01em !important; /* Consistent with headings */
+}
+
+/* Adjust for small screens - slightly larger letter spacing can help on mobile */
+@media only screen and (max-width: 480px) {
+  body, p, li, blockquote {
+    letter-spacing: -0.02em !important; /* Less reduction on mobile for better readability */
+  }
+}
 }
