@@ -82,10 +82,38 @@
     margin-top: 0;
   }
   
-  /* Mobile adjustments */
+  /* Mobile adjustments - focus on vertical spacing reduction while keeping logo prominent */
   @media only screen and (max-width: 768px) {
+    /* Reduce overall header vertical spacing */
+    .header {
+      padding-top: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      min-height: auto;
+    }
+    
+    /* Keep logo prominent but reduce vertical margins */
+    .logo.logo--centered {
+      margin-bottom: 15px;
+    }
+    
+    /* Make the logo wider for mobile while maintaining aspect ratio */
     .logo__image {
-      max-height: 150px;
+      max-width: 90%;
+      width: auto;
+      max-height: none; /* Remove height constraint */
+      height: auto;
+    }
+    
+    /* Tighten nav spacing */
+    .main-nav.main-nav--centered {
+      margin-bottom: 10px;
+    }
+    
+    /* Adjust hero section spacing for mobile if it exists */
+    .hero {
+      padding: 30px 0;
+      margin-bottom: 30px;
     }
   }
 </style>
