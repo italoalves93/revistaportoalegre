@@ -8,7 +8,7 @@ image: anuncie.jpg
 ## Equipe editorial
 
 ### Edição-executiva
-Eduardo Lara e Ítalo Alves
+Italo Alves
 
 ### Ilustrações
 Gabriela João (Portfólio)
