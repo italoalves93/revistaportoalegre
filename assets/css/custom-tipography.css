@@ -215,4 +215,85 @@ blockquote {
     letter-spacing: -0.02em !important; /* Less reduction on mobile for better readability */
   }
 }
+  /* Ajustes de Espaçamento entre Linhas */
+
+/* Redução do line-height para o corpo do texto */
+body, p, li, td, th, input, textarea, address, 
+.article__excerpt, .prev-excerpt, .next-excerpt {
+  line-height: 1.4 !important; /* Reduzido de 1.6 para 1.4 */
+}
+
+/* Ajustes específicos para áreas principais de conteúdo */
+.post-content p, 
+.post-content li,
+.page__content p,
+.page__content li {
+  line-height: 1.4 !important; /* Consistente com o corpo do texto */
+  margin-bottom: 1em !important; /* Ajuste da margem inferior para compensar o line-height reduzido */
+}
+
+/* Mantém line-height diferenciado para citações */
+blockquote {
+  line-height: 1.45 !important; /* Ligeiramente maior para citações em bloco */
+}
+
+/* Espaçamento para o blurb */
+.post-blurb {
+  line-height: 1.45 !important; /* Ligeiramente maior para o resumo */
+}
+
+/* Espaçamento para títulos */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.page-title,
+.article__title,
+.hero__title,
+.author-name,
+.article-title {
+  line-height: 1.2 !important; /* Ligeiramente mais apertado para títulos */
+}
+
+/* Ajustes para elementos de título específicos */
+.post-content h2,
+.page__content h2 {
+  margin-top: 1.6em !important; /* Mais espaço acima dos títulos secundários */
+  margin-bottom: 0.6em !important; /* Menos espaço abaixo */
+}
+
+.post-content h3,
+.page__content h3 {
+  margin-top: 1.4em !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Ajuste para listas */
+.post-content ul,
+.post-content ol,
+.page__content ul,
+.page__content ol {
+  margin-bottom: 1em !important;
+}
+
+.post-content ul li,
+.post-content ol li,
+.page__content ul li,
+.page__content ol li {
+  margin-bottom: 0.4em !important; /* Reduz o espaço entre itens de lista */
+}
+
+/* Notas de rodapé */
+.footnotes {
+  line-height: 1.35 !important; /* Ainda mais compacto para notas de rodapé */
+}
+
+.footnotes p {
+  margin-bottom: 0.5em !important;
+}
+
+/* Ajuste para telas pequenas - manter um pouco mais de espaçamento em dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  body, p, li {
+    line-height: 1.45 !important; /* Ligeiramente maior em dispositivos móveis para melhor legibilidade */
+  }
+}
 }
