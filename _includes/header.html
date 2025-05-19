@@ -3,7 +3,8 @@
     <div class="col col-12">
       <!-- início do cabeçalho -->
       <header class="header">
-        <div class="logo">
+        <!-- Centered logo with larger size -->
+        <div class="logo logo--centered">
           <a class="logo__link" href="{{site.baseurl}}/">
           {%if site.data.settings.logo %}
             <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
@@ -13,7 +14,8 @@
           </a>
         </div>
 
-        <nav class="main-nav">
+        <!-- Centered navigation below logo -->
+        <nav class="main-nav main-nav--centered">
           <div class="main-nav__box">
             <div class="nav-icon__close">
               <i class="ion ion-ios-close-circle-outline"></i>
