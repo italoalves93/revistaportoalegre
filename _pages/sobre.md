@@ -15,6 +15,6 @@ Lançada 150 anos após a fundação da Sociedade Partenon Literário, institui�
 
 Revista Porto Alegre é editada por Italo Alves.
 
-#Diretrizes para submissão
+## Diretrizes para submissão
 
-#Títulos para resenha
+## Títulos para resenha
