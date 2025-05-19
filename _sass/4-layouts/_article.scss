@@ -1,13 +1,12 @@
-// Add this at the top of your article.scss file
-.article {
-  &:first-child {
-    margin-top: 30px; // Reduced from 60px since the header is now taller
-  }
-  
-  // Rest of your article styling remains the same
-}
 .article {
   margin-bottom: 40px;
+  
+  &:first-child {
+    margin-top: 0; // Remove top margin for first article
+  }
+  
+  // Rest of article styling remains the same
+}
 
   .article__wrapper {
     display: flex;
